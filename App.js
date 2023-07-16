@@ -6,6 +6,7 @@ import LoginScreen from "./screens/LoginScreen";
 import SignupScreen from "./screens/SignupScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import { Colors } from "./constants/styles";
+import { API_KEY } from "@env";
 
 const Stack = createNativeStackNavigator();
 
@@ -47,6 +48,7 @@ function Navigation() {
 }
 
 export default function App() {
+  console.log("API_KEY", API_KEY);
   return (
     <>
       <StatusBar style="light" />
